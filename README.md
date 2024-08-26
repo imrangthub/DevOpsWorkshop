@@ -1,4 +1,5 @@
 #SonarQube
+===========================
 
  Running SonarQube server with docker:
  
@@ -31,3 +32,5 @@ add in spring boot project:
 Run maven app:
 
     mvn sonar:sonar
+
+![image](https://github.com/user-attachments/assets/7c346da3-0a39-4009-9ed7-c13de07725eb)
