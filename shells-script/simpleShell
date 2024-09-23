@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Function to display the current time
+get_time() {
+    echo "Current Time: $(date +'%Y-%m-%d %H:%M:%S')"
+}
+
+# Function to display help instructions
+show_help() {
+    echo "Usage: simpleShell [command]"
+    echo "Commands:"
+    echo "  gettime   Show the current time"
+    echo "  help      Display this help message"
+    echo "  -help     Display this help message"
+}
+
+# Check the first argument and call the appropriate function
+case "$1" in
+    gettime)
+        get_time
+        ;;
+    help | -help)
+        show_help
+        ;;
+    *)
+        echo "Invalid command. Use 'help' for usage instructions."
+        ;;
+esac
+
